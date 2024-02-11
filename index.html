@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"></head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Protest+Revolution&display=swap" rel="stylesheet">
+    
+    <body>
+    <div id="fullPlayer"> 
+        <header>
+            <div id="branding">
+                <img id="brandLogo" src="./My logo.jpeg" alt="brandLogo">
+                <div id="brandName">
+                    D-Music
+                </div>
+            </div>
+             <p class="quote">Music is the shorthand of emotion</p>
+        </header>
+   
+
+
+        <div id="main_body">
+
+            <div id="left_sideBar">
+                <div id="filter_box">
+                   <label for="category">Filter : </label>
+                   <select name="category" id="category">
+                      <option value="All" selected>All Song</option>
+                      <option value="Dance">Dance Song</option>
+                      <option value="Love">Love Song</option>
+                      <option value="Devotional">Devotional Song</option>
+                      <option value="English">English Song</option>
+                    </select>
+                </div>
+
+                <div id="songlist_container">
+                    <h2>all songs : </h2>
+                    <ul id="songLIst"> </ul>
+                </div>
+            </div>
+
+
+
+
+
+            <div id="control_box">
+                <div id="song_control">
+                    
+                        <img src="./CD_Image.png" alt="song poster" id="poster_Img">
+                       <div id="songInfo">
+                        <p id="songName"></p>
+                       </div>
+                
+
+                    <audio controls id="SongTracker" autoplay loop></audio>
+
+                    <div id="song_change">
+                        <button id="go_back"> <i class="fa fa-sharp fa fa-solid fa fa-arrow-left"></i> </button>
+                        <button id="move_forverd"> <i class=" fa fa-sharp fa fa-solid  fa fa-arrow-right"></i></button>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>

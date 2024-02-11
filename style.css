@@ -1,0 +1,259 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+#fullPlayer{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+  /**************   Nav - bar - styling  **************/
+
+header{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: rgb(110, 184, 245);
+    border: solid black 1px;
+    width: 100%;
+    height: 50px;
+}
+
+#branding{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 7px;
+    font-size: 30px;
+    font-weight: 600;
+}
+#brandLogo{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.quote{
+margin-right: 10px;
+font-size: 28px;
+font-family: "Protest Revolution", sans-serif;
+font-weight: 600;
+animation-name:QuoteAnim;
+animation-duration: 3s;
+animation-iteration-count: infinite;
+animation-direction: alternate;
+animation-timing-function: linear;
+}
+@keyframes QuoteAnim {
+           form{
+            color: rgb(255, 255, 255);
+           }
+           to{
+            color: rgb(185, 34, 0);
+           }
+        }
+
+
+
+
+
+/* #nav_Btn{
+    width: 40px;
+    height:40px;
+    border:solid black 1px;
+    border-radius: 50%;
+    overflow: hidden;
+    
+}
+
+#nav_Btn img{
+    width: 18px;
+    width: 18px;
+} */
+
+
+
+
+
+/* *********  main music controler box style   **************** */
+
+#main_body{
+    display:grid;
+    grid-template-columns:2fr 4fr ;
+    background-color:rgb(47, 48, 48);
+    color: rgb(255, 255, 255);
+    width: 100vw;
+    height: 552px;
+}
+
+
+
+#control_box{
+    border-left: solid 2px white;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 552px;
+
+   background-image:url(./Untitled\ design.png);
+   background-size: cover; 
+   
+}
+
+
+#song_control{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: solid black 2px;
+    border-radius: 20px;
+    height: 30rem;
+    width: 35rem;
+    background-color: rgba(255, 255, 255, 0.316);
+    box-shadow: inset 0px 0px 10px 5px black;
+}
+
+
+#poster_Img{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    
+    animation-name: rotation;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function:linear;
+    box-shadow:inset 0px 0px 10px 5px  rgb(0, 0, 0) , inset 0px 0px 15px 5px black;
+}
+
+@keyframes rotation{
+
+0%{
+    rotate: 0deg;
+}
+100%{
+    rotate: 360deg;
+    }
+}
+
+#songInfo{
+    background-color:rgb(211, 209, 209);
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    font-weight: 500;
+    padding: 5px;
+    margin: 15px;
+    box-shadow: inset 0px 0px 3px 2px black;
+    cursor:default;
+}
+
+#SongTracker{
+margin-bottom: 10px;
+}
+
+
+
+#song_change{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+    
+}
+#go_back{
+    width: 60px;
+    height: 40px;
+    background-color: rgb(110, 184, 245);
+    color: rgb(0, 0, 0);
+    border: none;
+    border: solid 2px black;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#move_forverd{
+    width: 60px;
+    height: 40px;
+    background-color: rgb(110, 184, 245);
+    color: rgb(0, 0, 0);
+    border: none;
+    border: solid 2px black;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+
+
+/***************  left-sideBar style   *************** */
+
+
+#left_sideBar{
+    height: 100%;
+    border-right: solid black 2px;
+    box-shadow:inset 0px 0px 5px 2px black;
+    padding:20px;
+    display: flex;
+    flex-direction: column;
+    align-items:start;
+}
+
+#filter_box label{
+    font-size: 20px;
+    font-weight: 600;
+}
+#filter_box select{
+    height: 25px;
+   
+    background-color: rgba(255, 255, 255, 0.584);
+    cursor: pointer;
+}
+
+
+#songlist_container{
+    position: relative;
+    top: 80px;
+}
+
+#songlist_container ul{
+    margin-top: 10px;
+    padding: 20px;
+    list-style-type: none;
+    max-height: 350px;
+    max-width: max-content;
+    overflow-x:hidden;
+    border: solid black 1px;
+    box-shadow:0px 0px 3px 1px black;
+}
+
+#songlist_container ul li{
+    font-size: 20px;
+    background-color: rgb(110, 184, 245);
+    color: rgb(0, 0, 0);
+    border: solid rgb(0, 0, 0) 2px;
+    border-radius: 25px;
+    margin-bottom: 10px;
+    padding: 2%;
+    width:max-content;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
